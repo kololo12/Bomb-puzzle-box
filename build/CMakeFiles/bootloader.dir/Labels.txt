@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+F:/jirka/ESP-projekty/bomba/build/CMakeFiles/bootloader
+F:/jirka/ESP-projekty/bomba/build/CMakeFiles/bootloader.rule
+F:/jirka/ESP-projekty/bomba/build/CMakeFiles/bootloader-complete.rule
+F:/jirka/ESP-projekty/bomba/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+F:/jirka/ESP-projekty/bomba/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+F:/jirka/ESP-projekty/bomba/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+F:/jirka/ESP-projekty/bomba/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+F:/jirka/ESP-projekty/bomba/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+F:/jirka/ESP-projekty/bomba/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+F:/jirka/ESP-projekty/bomba/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
