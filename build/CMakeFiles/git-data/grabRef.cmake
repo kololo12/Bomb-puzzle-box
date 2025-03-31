@@ -18,7 +18,7 @@ set(HEAD_HASH)
 file(READ "F:/jirka/ESP-projekty/bomba/build/CMakeFiles/git-data/HEAD" HEAD_CONTENTS LIMIT 1024)
 
 string(STRIP "${HEAD_CONTENTS}" HEAD_CONTENTS)
-set(GIT_DIR "F:/jirka/ESP/.git")
+set(GIT_DIR "F:/jirka/ESP-projekty/bomba/.git")
 # handle git-worktree
 if(EXISTS "${GIT_DIR}/commondir")
 	file(READ "${GIT_DIR}/commondir" GIT_DIR_NEW LIMIT 1024)
