@@ -7,12 +7,14 @@
 #include "freertos/task.h"
 #include "esp_log.h"
 #include "globals.h"
+#include "driver/gpio.h" 
 
 #define lcd_tag "lcd"
-
+#define greenled_pin GPIO_NUM_13
 
 TaskHandle_t lcd_task_handle = NULL;
 TaskHandle_t senzorzvuk_task_handle = NULL;
+TaskHandle_t blink_is_it_on_task_handle = NULL;
 
 void lcd_task(void *pvParameters){
 	while(1){
@@ -47,6 +49,19 @@ void senzorzvuku_task(void *pvParameters){
 	}
 }
 
+void blink_is_it_on(void *pvParameters) {
+    gpio_reset_pin(greenled_pin);  // Reset GPIO settings
+    gpio_set_direction(greenled_pin, GPIO_MODE_OUTPUT);
+    gpio_set_level(greenled_pin, 0);  // Ensure it's off initially
+    while(1) {
+        gpio_set_level(greenled_pin, 1);  // LED ON
+        vTaskDelay(pdMS_TO_TICKS(500));  // Wait for 500ms
+
+        gpio_set_level(greenled_pin, 0);  // LED OFF
+        vTaskDelay(pdMS_TO_TICKS(500));  // Wait for 500ms
+    }
+}
+
 void hw_init(void){
 	lcd_init();
 }
@@ -54,6 +69,7 @@ void hw_init(void){
 void taskcreation(void){
 	xTaskCreate(lcd_task,"psani lcd",2048,NULL,1,&lcd_task_handle);
 	xTaskCreate(senzorzvuku_task,"je to moc nahlas",2048,NULL,1,&senzorzvuk_task_handle);
+	xTaskCreate(blink_is_it_on,"ledka bliká",2048,NULL,1,&blink_is_it_on_task_handle);
 
 }
 
