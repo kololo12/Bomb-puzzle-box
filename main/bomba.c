@@ -8,6 +8,7 @@
 #include "esp_log.h"
 #include "globals.h"
 #include "driver/gpio.h" 
+#include "matic_4x4.h"
 
 #define lcd_tag "lcd"
 #define greenled_pin GPIO_NUM_13
@@ -15,6 +16,7 @@
 TaskHandle_t lcd_task_handle = NULL;
 TaskHandle_t senzorzvuk_task_handle = NULL;
 TaskHandle_t blink_is_it_on_task_handle = NULL;
+TaskHandle_t matic_task_handle = NULL;
 
 void lcd_task(void *pvParameters){
 	while(1){
@@ -36,6 +38,17 @@ void lcd_task(void *pvParameters){
 		lcd_send_string("PP MAN");
 		vTaskDelay(pdMS_TO_TICKS(5000));
 	}
+}
+
+void keypad_task(void *pvParameter) {
+    keypad_init();
+	while (1) {
+        char key = scan_keypad();
+        if (key != '\0') {
+			ESP_LOGI("alarm", "Key Pressed: %c\n", key);
+        }
+        vTaskDelay(pdMS_TO_TICKS(100));  
+    }
 }
 
 void senzorzvuku_task(void *pvParameters){
@@ -70,6 +83,7 @@ void taskcreation(void){
 	xTaskCreate(lcd_task,"psani lcd",2048,NULL,1,&lcd_task_handle);
 	xTaskCreate(senzorzvuku_task,"je to moc nahlas",2048,NULL,1,&senzorzvuk_task_handle);
 	xTaskCreate(blink_is_it_on,"ledka bliká",2048,NULL,1,&blink_is_it_on_task_handle);
+	xTaskCreate(&keypad_task, "keypad_task", 2048, NULL, 1,&matic_task_handle);
 
 }
 

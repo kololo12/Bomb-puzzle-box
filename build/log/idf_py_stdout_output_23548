@@ -1,0 +1,554 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 30 2025 19:00:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a24ch ( 41548) map[0m
+[0;32mI (104) esp_image: segment 1: paddr=0001a274 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (104) esp_image: segment 2: paddr=0001a298 vaddr=3ffb0000 size=0236ch (  9068) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=0001c60c vaddr=40080000 size=03a0ch ( 14860) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=14ef8h ( 85752) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=00034f20 vaddr=40083a0c size=093b8h ( 37816) load[0m
+[0;32mI (173) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (173) boot: Disabling RNG early entropy source...[0m
+[0;32mI (184) cpu_start: Multicore app[0m
+[0;32mI (192) cpu_start: Pro cpu start user code[0m
+[0;32mI (192) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (192) app_init: Application information:[0m
+[0;32mI (192) app_init: Project name:     bomba[0m
+[0;32mI (196) app_init: App version:      78d17e4-dirty[0m
+[0;32mI (200) app_init: Compile time:     Apr  2 2025 20:54:43[0m
+[0;32mI (205) app_init: ELF file SHA256:  27b795469...[0m
+[0;32mI (210) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (213) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (217) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (221) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (225) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (232) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (236) heap_init: At 3FFB2C40 len 0002D3C0 (180 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (247) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 4008CDC4 len 0001323C (76 KiB): IRAM[0m
+[0;32mI (259) spi_flash: detected chip: generic[0m
+[0;32mI (262) spi_flash: flash io: dio[0m
+[0;33mW (264) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (277) main_task: Started on CPU0[0m
+[0;32mI (287) main_task: Calling app_main()[0m
+[0;32mI (387) gpio: GPIO[15]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:1 [0m
+[0;32mI (387) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (387) main_task: Returned from app_main()[0m
+[0;32mI (25597) alarm: Key Pressed: 1[0m
+
+[0;32mI (26387) alarm: Key Pressed: 2[0m
+
+[0;32mI (27047) alarm: Key Pressed: 3[0m
+
+[0;32mI (27557) alarm: Key Pressed: A[0m
+
+[0;32mI (32827) alarm: Key Pressed: 7[0m
+
+[0;32mI (33157) alarm: Key Pressed: 8[0m
+
+[0;32mI (33647) alarm: Key Pressed: 9[0m
+
+[0;32mI (34047) alarm: Key Pressed: C[0m
+
+[0;32mI (34877) alarm: Key Pressed: C[0m
+
+[0;32mI (35047) alarm: Key Pressed: C[0m
+
+[0;32mI (35307) alarm: Key Pressed: C[0m
+
+[0;32mI (37407) alarm: Key Pressed: *[0m
+
+[0;32mI (38017) alarm: Key Pressed: 0[0m
+
+[0;32mI (38677) alarm: Key Pressed: #[0m
+
+[0;32mI (39857) alarm: Key Pressed: D[0m
+
+[0;32mI (40317) alarm: Key Pressed: D[0m
+
+[0;32mI (40567) alarm: Key Pressed: D[0m
+
+[0;32mI (41217) alarm: Key Pressed: 7[0m
+
+[0;32mI (44037) alarm: Key Pressed: 7[0m
+
+[0;32mI (44587) alarm: Key Pressed: 7[0m
+
+[0;32mI (48337) alarm: Key Pressed: *[0m
+
+[0;32mI (49037) alarm: Key Pressed: 7[0m
+
+[0;32mI (81187) alarm: Key Pressed: 7[0m
+
+[0;32mI (82537) alarm: Key Pressed: 7[0m
+
+[0;32mI (83067) alarm: Key Pressed: *[0m
+
+[0;32mI (83817) alarm: Key Pressed: 8[0m
+
+[0;32mI (84867) alarm: Key Pressed: 8[0m
+
+[0;32mI (85557) alarm: Key Pressed: 0[0m
+
+[0;32mI (86307) alarm: Key Pressed: 9[0m
+
+[0;32mI (86457) alarm: Key Pressed: 9[0m
+
+[0;32mI (89527) alarm: Key Pressed: C[0m
+
+[0;32mI (90127) alarm: Key Pressed: D[0m
+
+[0;32mI (90917) alarm: Key Pressed: D[0m
+
+[0;32mI (91187) alarm: Key Pressed: D[0m
+
+[0;32mI (91607) alarm: Key Pressed: C[0m
+
+[0;32mI (93097) alarm: Key Pressed: C[0m
+
+[0;32mI (93657) alarm: Key Pressed: C[0m
+
+[0;32mI (93917) alarm: Key Pressed: C[0m
+
+[0;32mI (104267) alarm: Key Pressed: 8[0m
+
+[0;32mI (104417) alarm: Key Pressed: 8[0m
+
+[0;32mI (104567) alarm: Key Pressed: 8[0m
+
+[0;32mI (104717) alarm: Key Pressed: 8[0m
+
+[0;32mI (104867) alarm: Key Pressed: 8[0m
+
+[0;32mI (105017) alarm: Key Pressed: 8[0m
+
+[0;32mI (105167) alarm: Key Pressed: 8[0m
+
+[0;32mI (105317) alarm: Key Pressed: 8[0m
+
+[0;32mI (105467) alarm: Key Pressed: 8[0m
+
+[0;32mI (105617) alarm: Key Pressed: 8[0m
+
+[0;32mI (105867) alarm: Key Pressed: 8[0m
+
+[0;32mI (106017) alarm: Key Pressed: 8[0m
+
+[0;32mI (106167) alarm: Key Pressed: 8[0m
+
+[0;32mI (106617) alarm: Key Pressed: 9[0m
+
+[0;32mI (106867) alarm: Key Pressed: 8[0m
+
+[0;32mI (107117) alarm: Key Pressed: 8[0m
+
+[0;32mI (107567) alarm: Key Pressed: 8[0m
+
+[0;32mI (107917) alarm: Key Pressed: 9[0m
+
+[0;32mI (108967) alarm: Key Pressed: 9[0m
+
+[0;32mI (109317) alarm: Key Pressed: 9[0m
+
+[0;32mI (116767) alarm: Key Pressed: 8[0m
+
+[0;32mI (119787) alarm: Key Pressed: *[0m
+
+[0;32mI (120497) alarm: Key Pressed: 7[0m
+
+[0;32mI (122837) alarm: Key Pressed: *[0m
+
+[0;32mI (123377) alarm: Key Pressed: 0[0m
+
+[0;32mI (124337) alarm: Key Pressed: #[0m
+
+[0;32mI (124947) alarm: Key Pressed: #[0m
+
+[0;32mI (125397) alarm: Key Pressed: D[0m
+
+[0;32mI (126167) alarm: Key Pressed: C[0m
+
+[0;32mI (127217) alarm: Key Pressed: C[0m
+
+[0;32mI (127667) alarm: Key Pressed: C[0m
+
+[0;32mI (127917) alarm: Key Pressed: C[0m
+
+[0;32mI (128067) alarm: Key Pressed: C[0m
+
+[0;32mI (128317) alarm: Key Pressed: C[0m
+
+[0;32mI (128667) alarm: Key Pressed: 9[0m
+
+[0;32mI (129417) alarm: Key Pressed: 8[0m
+
+[0;32mI (129967) alarm: Key Pressed: 7[0m
+
+[0;32mI (130617) alarm: Key Pressed: 7[0m
+
+[0;32mI (131067) alarm: Key Pressed: 7[0m
+
+[0;32mI (131317) alarm: Key Pressed: 7[0m
+
+[0;32mI (131467) alarm: Key Pressed: 7[0m
+
+[0;32mI (131717) alarm: Key Pressed: 7[0m
+
+[0;32mI (131867) alarm: Key Pressed: 7[0m
+
+[0;32mI (132317) alarm: Key Pressed: 7[0m
+
+[0;32mI (132567) alarm: Key Pressed: 7[0m
+
+[0;32mI (132717) alarm: Key Pressed: 7[0m
+
+[0;32mI (132967) alarm: Key Pressed: 7[0m
+
+[0;32mI (133117) alarm: Key Pressed: 7[0m
+
+[0;32mI (133367) alarm: Key Pressed: 7[0m
+
+[0;32mI (133517) alarm: Key Pressed: 7[0m
+
+[0;32mI (133967) alarm: Key Pressed: 7[0m
+
+[0;32mI (134517) alarm: Key Pressed: 7[0m
+
+[0;32mI (180847) alarm: Key Pressed: D[0m
+
+[0;32mI (181707) alarm: Key Pressed: D[0m
+
+[0;32mI (182027) alarm: Key Pressed: D[0m
+
+[0;32mI (183077) alarm: Key Pressed: #[0m
+
+[0;32mI (183587) alarm: Key Pressed: #[0m
+
+[0;32mI (183977) alarm: Key Pressed: 0[0m
+
+[0;32mI (185057) alarm: Key Pressed: *[0m
+
+[0;32mI (186787) alarm: Key Pressed: A[0m
+
+[0;32mI (187387) alarm: Key Pressed: 3[0m
+
+[0;32mI (187987) alarm: Key Pressed: 2[0m
+
+[0;32mI (188437) alarm: Key Pressed: 7[0m
+
+[0;32mI (188787) alarm: Key Pressed: 7[0m
+
+[0;32mI (189047) alarm: Key Pressed: 4[0m
+
+[0;32mI (189297) alarm: Key Pressed: 1[0m
+
+[0;32mI (190647) alarm: Key Pressed: 7[0m
+
+[0;32mI (190797) alarm: Key Pressed: 7[0m
+
+[0;32mI (191047) alarm: Key Pressed: 7[0m
+
+[0;32mI (191307) alarm: Key Pressed: 7[0m
+
+[0;32mI (191557) alarm: Key Pressed: 7[0m
+
+[0;32mI (191807) alarm: Key Pressed: 1[0m
+
+[0;32mI (192157) alarm: Key Pressed: 1[0m
+
+[0;32mI (192407) alarm: Key Pressed: 1[0m
+
+[0;32mI (193357) alarm: Key Pressed: 1[0m
+
+[0;32mI (193657) alarm: Key Pressed: 1[0m
+
+[0;32mI (193917) alarm: Key Pressed: 1[0m
+
+[0;32mI (194187) alarm: Key Pressed: 1[0m
+
+[0;32mI (194437) alarm: Key Pressed: 1[0m
+
+[0;32mI (194707) alarm: Key Pressed: 1[0m
+
+[0;32mI (194957) alarm: Key Pressed: 1[0m
+
+[0;32mI (195247) alarm: Key Pressed: 1[0m
+
+[0;32mI (195497) alarm: Key Pressed: 1[0m
+
+[0;32mI (195747) alarm: Key Pressed: 1[0m
+
+[0;32mI (195997) alarm: Key Pressed: 1[0m
+
+[0;32mI (196247) alarm: Key Pressed: 1[0m
+
+[0;32mI (196507) alarm: Key Pressed: 1[0m
+
+[0;32mI (196847) alarm: Key Pressed: 2[0m
+
+[0;32mI (197107) alarm: Key Pressed: 2[0m
+
+[0;32mI (197357) alarm: Key Pressed: 2[0m
+
+[0;32mI (197607) alarm: Key Pressed: 2[0m
+
+[0;32mI (197907) alarm: Key Pressed: 3[0m
+
+[0;32mI (198157) alarm: Key Pressed: 3[0m
+
+[0;32mI (198407) alarm: Key Pressed: 3[0m
+
+[0;32mI (198657) alarm: Key Pressed: 3[0m
+
+[0;32mI (198947) alarm: Key Pressed: A[0m
+
+[0;32mI (199197) alarm: Key Pressed: A[0m
+
+[0;32mI (199447) alarm: Key Pressed: A[0m
+
+[0;32mI (204877) alarm: Key Pressed: C[0m
+
+[0;32mI (205607) alarm: Key Pressed: 9[0m
+
+[0;32mI (205987) alarm: Key Pressed: 8[0m
+
+[0;32mI (206577) alarm: Key Pressed: 7[0m
+
+[0;32mI (206807) alarm: Key Pressed: 7[0m
+
+[0;32mI (207067) alarm: Key Pressed: 7[0m
+
+[0;32mI (207557) alarm: Key Pressed: 7[0m
+
+[0;32mI (208157) alarm: Key Pressed: *[0m
+
+[0;32mI (208617) alarm: Key Pressed: 0[0m
+
+[0;32mI (208987) alarm: Key Pressed: #[0m
+
+[0;32mI (209687) alarm: Key Pressed: D[0m
+
+[0;32mI (214187) alarm: Key Pressed: D[0m
+
+[0;32mI (215087) alarm: Key Pressed: D[0m
+
+[0;32mI (215387) alarm: Key Pressed: D[0m
+
+[0;32mI (215667) alarm: Key Pressed: D[0m
+
+[0;32mI (215897) alarm: Key Pressed: D[0m
+
+[0;32mI (216147) alarm: Key Pressed: D[0m
+
+[0;32mI (216397) alarm: Key Pressed: D[0m
+
+[0;32mI (226877) alarm: Key Pressed: D[0m
+
+[0;32mI (227137) alarm: Key Pressed: D[0m
+
+[0;32mI (227387) alarm: Key Pressed: D[0m
+
+[0;32mI (227577) alarm: Key Pressed: D[0m
+
+[0;32mI (227757) alarm: Key Pressed: D[0m
+
+[0;32mI (228427) alarm: Key Pressed: C[0m
+
+[0;32mI (228677) alarm: Key Pressed: C[0m
+
+[0;32mI (228937) alarm: Key Pressed: C[0m
+
+[0;32mI (230387) alarm: Key Pressed: A[0m
+
+[0;32mI (237337) alarm: Key Pressed: D[0m
+
+[0;32mI (238027) alarm: Key Pressed: C[0m
+
+[0;32mI (239427) alarm: Key Pressed: A[0m
+
+[0;32mI (242507) alarm: Key Pressed: A[0m
+
+[0;32mI (243037) alarm: Key Pressed: 3[0m
+
+[0;32mI (243947) alarm: Key Pressed: 2[0m
+
+[0;32mI (244367) alarm: Key Pressed: 1[0m
+
+[0;32mI (244777) alarm: Key Pressed: 1[0m
+
+[0;32mI (245097) alarm: Key Pressed: 1[0m
+
+[0;32mI (245387) alarm: Key Pressed: 1[0m
+
+[0;32mI (259737) alarm: Key Pressed: #[0m
+
+[0;32mI (308087) ISR: Interrupt detected on GPIO[0m
+[0;32mI (310387) alarm: byl spuštěn alarm[0m
+[0;32mI (338827) alarm: Key Pressed: A[0m
+
+[0;32mI (340247) alarm: Key Pressed: C[0m
+
+[0;32mI (341107) alarm: Key Pressed: D[0m
+
+[0;32mI (341677) alarm: Key Pressed: D[0m
+
+[0;32mI (341947) alarm: Key Pressed: D[0m
+
+[0;32mI (342147) alarm: Key Pressed: D[0m
+
+[0;32mI (344247) alarm: Key Pressed: D[0m
+
+[0;32mI (344497) alarm: Key Pressed: D[0m
+
+[0;32mI (344697) alarm: Key Pressed: D[0m
+
+[0;32mI (344947) alarm: Key Pressed: D[0m
+
+[0;32mI (345217) alarm: Key Pressed: D[0m
+
+[0;32mI (345877) alarm: Key Pressed: D[0m
+
+[0;32mI (346357) alarm: Key Pressed: D[0m
+
+[0;32mI (346667) alarm: Key Pressed: D[0m
+
+[0;32mI (365917) alarm: Key Pressed: 7[0m
+
+[0;32mI (366547) alarm: Key Pressed: 1[0m
+
+[0;32mI (367547) alarm: Key Pressed: 1[0m
+
+[0;32mI (368077) alarm: Key Pressed: 1[0m
+
+[0;32mI (369597) alarm: Key Pressed: 7[0m
+
+[0;32mI (370017) alarm: Key Pressed: 7[0m
+
+[0;32mI (370407) alarm: Key Pressed: 7[0m
+
+[0;32mI (370707) alarm: Key Pressed: 7[0m
+
+[0;32mI (370957) alarm: Key Pressed: 7[0m
+
+[0;32mI (371107) alarm: Key Pressed: 7[0m
+
+[0;32mI (371297) alarm: Key Pressed: 7[0m
+
+[0;32mI (371487) alarm: Key Pressed: 7[0m
+
+[0;32mI (371667) alarm: Key Pressed: 7[0m
+
+[0;32mI (372047) alarm: Key Pressed: *[0m
+
+[0;32mI (372447) alarm: Key Pressed: *[0m
+
+[0;32mI (373137) alarm: Key Pressed: 0[0m
+
+[0;32mI (373387) alarm: Key Pressed: 0[0m
+
+[0;32mI (375937) alarm: Key Pressed: #[0m
+
+[0;32mI (376537) alarm: Key Pressed: #[0m
+
+[0;32mI (376947) alarm: Key Pressed: D[0m
+
+[0;32mI (377477) alarm: Key Pressed: D[0m
+
+[0;32mI (377857) alarm: Key Pressed: D[0m
+
+[0;32mI (380807) alarm: Key Pressed: 4[0m
+
+[0;32mI (381277) alarm: Key Pressed: 2[0m
+
+[0;32mI (381537) alarm: Key Pressed: 2[0m
+
+[0;32mI (381787) alarm: Key Pressed: 2[0m
+
+[0;32mI (382037) alarm: Key Pressed: 2[0m
+
+[0;32mI (382217) alarm: Key Pressed: 2[0m
+
+[0;32mI (382667) alarm: Key Pressed: 9[0m
+
+[0;32mI (383017) alarm: Key Pressed: 9[0m
+
+[0;32mI (383267) alarm: Key Pressed: 9[0m
+
+[0;32mI (387237) alarm: Key Pressed: 8[0m
+
+[0;32mI (387647) alarm: Key Pressed: 0[0m
+
+[0;32mI (388517) alarm: Key Pressed: *[0m
+
+[0;32mI (389877) alarm: Key Pressed: 7[0m
+
+[0;32mI (391127) alarm: Key Pressed: 7[0m
+
+[0;32mI (391377) alarm: Key Pressed: 7[0m
+
+[0;32mI (391627) alarm: Key Pressed: 7[0m
+
+[0;32mI (394987) alarm: Key Pressed: 7[0m
+
+[0;32mI (395337) alarm: Key Pressed: 7[0m
+
+[0;32mI (395597) alarm: Key Pressed: 4[0m
+
+[0;32mI (395877) alarm: Key Pressed: 7[0m
+
+[0;32mI (396127) alarm: Key Pressed: 1[0m
+
+[0;32mI (397377) alarm: Key Pressed: 7[0m
+
+[0;32mI (397627) alarm: Key Pressed: 7[0m
+
+[0;32mI (397877) alarm: Key Pressed: 7[0m
+
+[0;32mI (398997) alarm: Key Pressed: 1[0m
+
+[0;32mI (399247) alarm: Key Pressed: 1[0m
+
+[0;32mI (399497) alarm: Key Pressed: 1[0m
+
+[0;32mI (399657) alarm: Key Pressed: 1[0m
+
+[0;32mI (399907) alarm: Key Pressed: 1[0m
+
+[0;32mI (401757) alarm: Key Pressed: 7[0m
+
+[0;32mI (402007) alarm: Key Pressed: 7[0m
+
+[0;32mI (405037) alarm: Key Pressed: 1[0m
+
+[0;32mI (405397) alarm: Key Pressed: 1[0m
+
+[0;32mI (406827) alarm: Key Pressed: 2[0m
+
+[0;32mI (407577) alarm: Key Pressed: 3[0m
+
+[0;32mI (408277) alarm: Key Pressed: A[0m
+

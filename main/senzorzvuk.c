@@ -37,6 +37,7 @@ void senzor_zvuk_init(void){
 
 void senzor_zvuk_alarm(){
 	gpio_set_level(senzor_zvuku_alarm, 1);
+	ESP_LOGI("alarm", "byl spuštěn alarm");
 }
 
 

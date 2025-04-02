@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "bomba",
-    "project_version":    "d981f94-dirty",
+    "project_version":    "78d17e4-dirty",
     "project_path":       "F:/jirka/ESP-projekty/bomba",
     "idf_path":           "F:/jirka/ESP",
     "build_dir":          "F:/jirka/ESP-projekty/bomba/build",
@@ -1195,7 +1195,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "F:/jirka/ESP-projekty/bomba/build/esp-idf/main/libmain.a",
-            "sources": [ "F:/jirka/ESP-projekty/bomba/main/bomba.c", "F:/jirka/ESP-projekty/bomba/main/hd44780.c", "F:/jirka/ESP-projekty/bomba/main/senzorzvuk.c" ],
+            "sources": [ "F:/jirka/ESP-projekty/bomba/main/bomba.c", "F:/jirka/ESP-projekty/bomba/main/hd44780.c", "F:/jirka/ESP-projekty/bomba/main/senzorzvuk.c", "F:/jirka/ESP-projekty/bomba/main/matic_4x4.c" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {
