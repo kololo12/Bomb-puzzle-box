@@ -11,7 +11,7 @@
 #include "matic_4x4.h"
 
 #define lcd_tag "lcd"
-#define greenled_pin GPIO_NUM_13
+#define greenled_pin GPIO_NUM_14
 
 TaskHandle_t lcd_task_handle = NULL;
 TaskHandle_t senzorzvuk_task_handle = NULL;
@@ -89,6 +89,7 @@ void taskcreation(void){
 
 void app_main(void)
 {
+	vTaskDelay(pdMS_TO_TICKS(200));
 	hw_init();
 	taskcreation();
 

@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "bomba",
-    "project_version":    "78d17e4-dirty",
+    "project_version":    "0e42f68-dirty",
     "project_path":       "F:/jirka/ESP-projekty/bomba",
     "idf_path":           "F:/jirka/ESP",
     "build_dir":          "F:/jirka/ESP-projekty/bomba/build",

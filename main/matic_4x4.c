@@ -3,7 +3,7 @@
 
 
 // GPIO pin mappings for rows and columns
-const int row_pins[ROWS] = {12, 14, 27, 26};  // Update to match your setup
+const int row_pins[ROWS] = {13, 12, 27, 26};  // Update to match your setup
 const int col_pins[COLS] = {25, 33, 32, 23};
 
 
@@ -27,6 +27,9 @@ void keypad_init() {
         gpio_set_direction(col_pins[i], GPIO_MODE_INPUT);
         gpio_set_pull_mode(col_pins[i], GPIO_PULLUP_ONLY);  // Pull-up for LOW detection
     }
+	
+	gpio_set_direction(GPIO_NUM_14, GPIO_MODE_OUTPUT);
+	gpio_set_level(GPIO_NUM_14, 1);
 }
 
 // Scan the keypad for a pressed key
@@ -37,6 +40,11 @@ char scan_keypad() {
         for (int col = 0; col < COLS; col++) {
             if (gpio_get_level(col_pins[col]) == 0) {  // Key press detected (LOW)
                 vTaskDelay(pdMS_TO_TICKS(50));  // Debounce
+			
+				if (gpio_get_level(col_pins[col]) != 0) {
+                    gpio_set_level(row_pins[row], 1);  // Restore row HIGH
+                    continue;  // Ignore false trigger
+                }
 
                 TickType_t press_time = xTaskGetTickCount();
 

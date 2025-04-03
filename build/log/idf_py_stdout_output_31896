@@ -1,0 +1,368 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 30 2025 19:00:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a24ch ( 41548) map[0m
+[0;32mI (104) esp_image: segment 1: paddr=0001a274 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (104) esp_image: segment 2: paddr=0001a298 vaddr=3ffb0000 size=0236ch (  9068) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=0001c60c vaddr=40080000 size=03a0ch ( 14860) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=14f20h ( 85792) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=00034f48 vaddr=40083a0c size=093b8h ( 37816) load[0m
+[0;32mI (173) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (173) boot: Disabling RNG early entropy source...[0m
+[0;32mI (184) cpu_start: Multicore app[0m
+[0;32mI (192) cpu_start: Pro cpu start user code[0m
+[0;32mI (192) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (192) app_init: Application information:[0m
+[0;32mI (192) app_init: Project name:     bomba[0m
+[0;32mI (196) app_init: App version:      0e42f68-dirty[0m
+[0;32mI (200) app_init: Compile time:     Apr  3 2025 16:21:10[0m
+[0;32mI (205) app_init: ELF file SHA256:  a5d99cd4f...[0m
+[0;32mI (210) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (213) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (217) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (221) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (225) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (232) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (236) heap_init: At 3FFB2C40 len 0002D3C0 (180 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (247) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 4008CDC4 len 0001323C (76 KiB): IRAM[0m
+[0;32mI (259) spi_flash: detected chip: generic[0m
+[0;32mI (262) spi_flash: flash io: dio[0m
+[0;33mW (265) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (277) main_task: Started on CPU0[0m
+[0;32mI (287) main_task: Calling app_main()[0m
+[0;32mI (587) gpio: GPIO[15]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:1 [0m
+[0;32mI (587) gpio: GPIO[12]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (587) main_task: Returned from app_main()[0m
+[0;32mI (3687) alarm: Key Pressed: 1[0m
+
+[0;32mI (4937) alarm: Key Pressed: 7[0m
+
+[0;32mI (5487) alarm: Key Pressed: *[0m
+
+[0;32mI (6097) alarm: Key Pressed: 2[0m
+
+[0;32mI (6787) alarm: Key Pressed: 8[0m
+
+[0;32mI (7287) alarm: Key Pressed: 0[0m
+
+[0;32mI (7927) alarm: Key Pressed: 8[0m
+
+[0;32mI (8657) alarm: Key Pressed: 2[0m
+
+[0;32mI (9257) alarm: Key Pressed: 3[0m
+
+[0;32mI (9707) alarm: Key Pressed: 3[0m
+
+[0;32mI (10717) alarm: Key Pressed: 9[0m
+
+[0;32mI (11137) alarm: Key Pressed: 9[0m
+
+[0;32mI (11457) alarm: Key Pressed: #[0m
+
+[0;32mI (12037) alarm: Key Pressed: 9[0m
+
+[0;32mI (12487) alarm: Key Pressed: C[0m
+
+[0;32mI (12897) alarm: Key Pressed: D[0m
+
+[0;32mI (13407) alarm: Key Pressed: C[0m
+
+[0;32mI (14347) alarm: Key Pressed: A[0m
+
+[0;32mI (14927) alarm: Key Pressed: 3[0m
+
+[0;32mI (15347) alarm: Key Pressed: 2[0m
+
+[0;32mI (15807) alarm: Key Pressed: 1[0m
+
+[0;32mI (17007) alarm: Key Pressed: 2[0m
+
+[0;32mI (17457) alarm: Key Pressed: 3[0m
+
+[0;32mI (18577) alarm: Key Pressed: A[0m
+
+[0;32mI (22357) ISR: Interrupt detected on GPIO[0m
+[0;32mI (23087) alarm: byl spuštěn alarm[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 30 2025 19:00:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a24ch ( 41548) map[0m
+[0;32mI (104) esp_image: segment 1: paddr=0001a274 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (104) esp_image: segment 2: paddr=0001a298 vaddr=3ffb0000 size=0236ch (  9068) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=0001c60c vaddr=40080000 size=03a0ch ( 14860) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=14f20h ( 85792) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=00034f48 vaddr=40083a0c size=093b8h ( 37816) load[0m
+[0;32mI (173) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (173) boot: Disabling RNG early entropy source...[0m
+[0;32mI (184) cpu_start: Multicore app[0m
+[0;32mI (192) cpu_start: Pro cpu start user code[0m
+[0;32mI (192) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (192) app_init: Application information:[0m
+[0;32mI (192) app_init: Project name:     bomba[0m
+[0;32mI (196) app_init: App version:      0e42f68-dirty[0m
+[0;32mI (200) app_init: Compile time:     Apr  3 2025 16:21:10[0m
+[0;32mI (205) app_init: ELF file SHA256:  a5d99cd4f...[0m
+[0;32mI (210) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (213) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (217) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (221) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (225) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (232) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (236) heap_init: At 3FFB2C40 len 0002D3C0 (180 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (247) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 4008CDC4 len 0001323C (76 KiB): IRAM[0m
+[0;32mI (259) spi_flash: detected chip: generic[0m
+[0;32mI (262) spi_flash: flash io: dio[0m
+[0;33mW (265) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (277) main_task: Started on CPU0[0m
+[0;32mI (287) main_task: Calling app_main()[0m
+[0;32mI (587) gpio: GPIO[15]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:1 [0m
+[0;32mI (587) gpio: GPIO[12]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (587) main_task: Returned from app_main()[0m
+[0;32mI (2287) ISR: Interrupt detected on GPIO[0m
+[0;32mI (3087) alarm: byl spuštěn alarm[0m
+[0;32mI (5397) alarm: Key Pressed: 1[0m
+
+[0;32mI (6397) alarm: Key Pressed: 2[0m
+
+[0;32mI (7117) alarm: Key Pressed: 3[0m
+
+[0;32mI (7807) alarm: Key Pressed: A[0m
+
+[0;32mI (9717) alarm: Key Pressed: 7[0m
+
+[0;32mI (10337) alarm: Key Pressed: 7[0m
+
+[0;32mI (10957) alarm: Key Pressed: *[0m
+
+[0;32mI (11487) alarm: Key Pressed: *[0m
+
+[0;32mI (11927) alarm: Key Pressed: *[0m
+
+[0;32mI (12447) alarm: Key Pressed: 0[0m
+
+[0;32mI (12827) alarm: Key Pressed: 0[0m
+
+[0;32mI (13297) alarm: Key Pressed: 8[0m
+
+[0;32mI (13677) alarm: Key Pressed: 8[0m
+
+[0;32mI (16417) alarm: Key Pressed: D[0m
+
+[0;32mI (16887) alarm: Key Pressed: #[0m
+
+[0;32mI (17317) alarm: Key Pressed: 9[0m
+
+[0;32mI (17677) alarm: Key Pressed: 9[0m
+
+[0;32mI (18187) alarm: Key Pressed: 9[0m
+
+[0;32mI (18647) alarm: Key Pressed: 9[0m
+
+[0;32mI (19087) alarm: Key Pressed: 9[0m
+
+[0;32mI (19577) alarm: Key Pressed: 9[0m
+
+[0;32mI (20297) alarm: Key Pressed: 9[0m
+
+[0;32mI (20657) alarm: Key Pressed: 9[0m
+
+[0;32mI (21117) alarm: Key Pressed: 9[0m
+
+[0;32mI (21597) alarm: Key Pressed: 9[0m
+
+[0;32mI (22257) alarm: Key Pressed: 9[0m
+
+[0;32mI (23267) alarm: Key Pressed: 9[0m
+
+[0;32mI (24087) alarm: Key Pressed: #[0m
+
+[0;32mI (24497) alarm: Key Pressed: #[0m
+
+[0;32mI (24887) alarm: Key Pressed: #[0m
+
+[0;32mI (25257) alarm: Key Pressed: *[0m
+
+[0;32mI (25657) alarm: Key Pressed: *[0m
+
+[0;32mI (25947) alarm: Key Pressed: *[0m
+
+[0;32mI (26337) alarm: Key Pressed: 7[0m
+
+[0;32mI (26687) alarm: Key Pressed: 7[0m
+
+[0;32mI (26977) alarm: Key Pressed: 7[0m
+
+[0;32mI (28037) alarm: Key Pressed: 1[0m
+
+[0;32mI (28447) alarm: Key Pressed: 1[0m
+
+[0;32mI (28857) alarm: Key Pressed: 2[0m
+
+[0;32mI (29177) alarm: Key Pressed: 2[0m
+
+[0;32mI (30037) alarm: Key Pressed: 3[0m
+
+[0;32mI (30327) alarm: Key Pressed: 3[0m
+
+[0;32mI (30937) alarm: Key Pressed: A[0m
+
+[0;32mI (31347) alarm: Key Pressed: A[0m
+
+[0;32mI (31617) alarm: Key Pressed: A[0m
+
+[0;32mI (32027) alarm: Key Pressed: 3[0m
+
+[0;32mI (32497) alarm: Key Pressed: 2[0m
+
+[0;32mI (33007) alarm: Key Pressed: 1[0m
+
+[0;32mI (33287) alarm: Key Pressed: 1[0m
+
+[0;32mI (33977) alarm: Key Pressed: 2[0m
+
+[0;32mI (34257) alarm: Key Pressed: 2[0m
+
+[0;32mI (34607) alarm: Key Pressed: 2[0m
+
+[0;32mI (34907) alarm: Key Pressed: 2[0m
+
+[0;32mI (35187) alarm: Key Pressed: 2[0m
+
+[0;32mI (36177) alarm: Key Pressed: 2[0m
+
+[0;32mI (40027) alarm: Key Pressed: 1[0m
+
+[0;32mI (40907) alarm: Key Pressed: 7[0m
+
+[0;32mI (42007) alarm: Key Pressed: *[0m
+
+[0;32mI (42977) alarm: Key Pressed: 0[0m
+
+[0;32mI (43327) alarm: Key Pressed: 8[0m
+
+[0;32mI (43747) alarm: Key Pressed: 8[0m
+
+[0;32mI (44697) alarm: Key Pressed: 2[0m
+
+[0;32mI (44877) alarm: Key Pressed: 2[0m
+
+[0;32mI (45707) alarm: Key Pressed: 2[0m
+
+[0;32mI (46487) alarm: Key Pressed: 1[0m
+
+[0;32mI (47587) alarm: Key Pressed: 7[0m
+
+[0;32mI (48437) alarm: Key Pressed: *[0m
+
+[0;32mI (48817) alarm: Key Pressed: 7[0m
+
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 30 2025 19:00:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a24ch ( 41548) map[0m
+[0;32mI (104) esp_image: segment 1: paddr=0001a274 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (104) esp_image: segment 2: paddr=0001a298 vaddr=3ffb0000 size=0236ch (  9068) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=0001c60c vaddr=40080000 size=03a0ch ( 14860) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=14f20h ( 85792) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=00034f48 vaddr=40083a0c size=093b8h ( 37816) load[0m
+[0;32mI (173) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (173) boot: Disabling RNG early entropy source...[0m
+[0;32mI (184) cpu_start: Multicore app[0m
+[0;32mI (192) cpu_start: Pro cpu start user code[0m
+[0;32mI (192) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (192) app_init: Application information:[0m
+[0;32mI (192) app_init: Project name:     bomba[0m
+[0;32mI (196) app_init: App version:      0e42f68-dirty[0m
+[0;32mI (200) app_init: Compile time:     Apr  3 2025 16:21:10[0m
+[0;32mI (205) app_init: ELF file SHA256:  a5d99cd4f...[0m
+[0;32mI (210) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (213) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (217) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (221) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (225) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (232) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (236) heap_init: At 3FFB2C40 len 0002D3C0 (180 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (247) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 4008CDC4 len 0001323C (76 KiB): IRAM[0m
+[0;32mI (259) spi_flash: detected chip: generic[0m
+[0;32mI (262) spi_flash: flash io: dio[0m
+[0;33mW (265) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (277) main_task: Started on CPU0[0m
+[0;32mI (287) main_task: Calling app_main()[0m
+[0;32mI (587) gpio: GPIO[15]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:1 [0m
+[0;32mI (587) gpio: GPIO[12]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (587) main_task: Returned from app_main()[0m
